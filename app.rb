@@ -11,7 +11,7 @@ module FormsLab
 
     get '/pirates/:id' do
       @pirate = Pirate.find(params[:id])
-
+      #binding.pry
       erb :'/pirates/show'
     end
 
