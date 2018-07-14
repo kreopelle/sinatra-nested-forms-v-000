@@ -3,10 +3,15 @@
 <h4>Pirate Weight: <%= @pirate.weight %></h4>
 <h4>Pirate Height: <%= @pirate.height %></h4>
 
-<h3>Ship Name: <%= @pirate.name %></h3>
-<h4>Ship Category: <%= @pirate.weight %></h4>
-<h4>Ship Booty: <%= @pirate.height %></h4>
-
-<h3>Ship Name: <%= @pirate.name %></h3>
-<h4>Ship Category: <%= @pirate.weight %></h4>
-<h4>Ship Booty: <%= @pirate.height %></h4>
+<h2>Ships</h2>
+<ol>
+<% @pirate.ships.each_with_index do |ship, index| %>
+  <li>Ship Number <%= index + 1 %>
+  <ul>
+    <li>Ship Name: <%= ship.name %></li>
+    <li>Ship Category: <%= ship.category %></li>
+    <li>Ship Booty: <%= ship.booty %></li>
+  </ul>
+  </li>
+<% end %>
+</ol>
