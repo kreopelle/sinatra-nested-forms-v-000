@@ -1,6 +1,31 @@
 <h1>Assemble yer Fleet!</h1>
 
-<!-- <form action="/pirates" method="POST">
+<form action="/pirates" method="POST">
+  <label for="pirate_name">Name</label>
+  <input type="text" id="pirate_name" name="pirate[name]"/>
+
+  <label for="pirate_height">Height</label>
+  <input type="text" id="pirate_height" name="pirate[height]"/>
+
+  <label for="pirate_weight">Weight</label>
+  <input type="text" id="pirate_weight" name="pirate[weight]"/>
+
+  <label for="ship_name_1">Ship No. 1 Name</label>
+  <input type="text" id="ship_name_1" name="pirate[ships][][name]"/>
+
+  <label for="ship_name_1">Ship No. 1 Category</label>
+  <input type="text" id="ship_category_1" name="pirate[ships][][category]"/>
+
+  <label for="ship_name_1">Ship No. 1 Booty</label>
+  <input type="text" id="ship_booty_1" name="pirate[ships][][booty]"/>
+
+
+  <input type="submit" value="Submit"/>
+</form>
+
+<%
+=begin %>
+<form action="/pirates" method="POST">
 
   <label for="pirate[name]">Pirate Name:</label>
   <p><input type="text" name="pirate[name]" id="pirate[name]"/></p>
@@ -31,3 +56,5 @@
 
   <input type="submit" value="Submit"/>
 </form> -->
+<%
+=end %>

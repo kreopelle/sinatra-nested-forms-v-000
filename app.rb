@@ -9,13 +9,21 @@ module FormsLab
       erb :'/pirates/index'
     end
 
+    get '/pirates/new' do
+      erb :'/pirates/new'
+    end
+
+    post '/pirates' do
+      binding.pry
+    end
+
     get '/pirates/:id' do
       @pirate = Pirate.find(params[:id])
 
       erb :'/pirates/show'
     end
 
-    
+
 
     # code other routes/actions here
     # get '/' do
